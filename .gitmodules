@@ -13,3 +13,6 @@
 [submodule "modules/mmdetection3d"]
 	path = modules/mmdetection3d
 	url = https://github.com/open-mmlab/mmdetection3d.git
+[submodule "modules/mmdeploy"]
+	path = modules/mmdeploy
+	url = https://github.com/open-mmlab/mmdeploy.git
