@@ -2,10 +2,62 @@
 ###
  # @Author       : yuhang09 yuhang09@baidu.com
  # @Date         : 2024-02-16 17:53:53
- # @LastEditors  : yuhang09 yuhang09@baidu.com
- # @LastEditTime : 2024-02-16 17:53:54
- # @FilePath     : /mm_perception/setup.bash
+ # @LastEditors: AristoYU
+ # @LastEditTime: 2024-02-17 02:00:26
+ # @FilePath: /mm_perception/setup.bash
  # @Description  : 
  # Copyright (c) Baidu, Inc. and its affiliates. All Rights Reserved
 ### 
 
+echo "###################################"
+echo "# STEP 0: init deps               #"
+echo "###################################"
+git submodule update --init --recursive
+
+# install mm deps
+echo "###################################"
+echo "# STEP 1: install mmlab deps      #"
+echo "###################################"
+# install mmcv
+echo "###################################"
+echo "# STEP 1.1: install mmcv          #"
+echo "###################################"
+cd ./modules/mmcv
+pip3 install -r requirements/optional.txt
+pip3 install -r requirements/runtime.txt
+pip3 install -v -e .
+cd -
+# install mmengine
+echo "###################################"
+echo "# STEP 1.2: install mmengine      #"
+echo "###################################"
+cd ./modules/mmengine
+pip3 install -r requirements/runtime.txt
+pip3 install -v -e .
+cd -
+# install mmpretrain
+echo "###################################"
+echo "# STEP 1.3: install mmpretrain    #"
+echo "###################################"
+cd ./modules/mmpretrain
+pip3 install -r requirements/runtime.txt
+pip3 install -v -e .
+cd -
+# install mmdetection
+echo "###################################"
+echo "# STEP 1.4: install mmdetection   #"
+echo "###################################"
+cd ./modules/mmdetection
+pip3 install -r requirements/optional.txt
+pip3 install -r requirements/runtime.txt
+pip3 install -v -e .
+cd -
+# install mmdetection3d
+echo "###################################"
+echo "# STEP 1.4: install mmdetection3d #"
+echo "###################################"
+cd ./modules/mmdetection3d
+pip3 install -r requirements/optional.txt
+pip3 install -r requirements/runtime.txt
+pip3 install -v -e .
+cd -
