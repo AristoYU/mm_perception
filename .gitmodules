@@ -1,0 +1,15 @@
+[submodule "modules/mmcv"]
+	path = modules/mmcv
+	url = https://github.com/open-mmlab/mmcv.git
+[submodule "modules/mmengine"]
+	path = modules/mmengine
+	url = https://github.com/open-mmlab/mmengine.git
+[submodule "modules/mmdetection"]
+	path = modules/mmdetection
+	url = https://github.com/open-mmlab/mmdetection.git
+[submodule "modules/mmpretrain"]
+	path = modules/mmpretrain
+	url = https://github.com/open-mmlab/mmpretrain.git
+[submodule "modules/mmdetection3d"]
+	path = modules/mmdetection3d
+	url = https://github.com/open-mmlab/mmdetection3d.git
