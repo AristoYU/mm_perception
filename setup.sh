@@ -3,7 +3,7 @@
  # @Author       : yuhang09 yuhang09@baidu.com
  # @Date         : 2024-02-16 17:53:53
  # @LastEditors: AristoYU
- # @LastEditTime: 2024-02-17 02:27:57
+ # @LastEditTime: 2024-02-17 02:42:48
  # @FilePath: /mm_perception/setup.bash
  # @Description  : 
  # Copyright (c) Baidu, Inc. and its affiliates. All Rights Reserved
@@ -23,7 +23,7 @@ echo "###################################"
 echo "# STEP 1.1: install mmcv          #"
 echo "###################################"
 cd ./modules/mmcv
-pip3 install -r requirements/optional.txt -r requirements/runtime.txt
+pip3 install -r build.txt -r requirements/optional.txt -r requirements/runtime.txt
 pip3 install -v -e .
 cd -
 # install mmengine
@@ -47,7 +47,7 @@ echo "###################################"
 echo "# STEP 1.4: install mmdetection   #"
 echo "###################################"
 cd ./modules/mmdetection
-pip3 install -r requirements/optional.txt -r requirements/runtime.txt
+pip3 install -r build.txt -r requirements/optional.txt -r requirements/runtime.txt
 pip3 install -v -e .
 cd -
 # install mmdetection3d
@@ -55,7 +55,7 @@ echo "###################################"
 echo "# STEP 1.5: install mmdetection3d #"
 echo "###################################"
 cd ./modules/mmdetection3d
-pip3 install -r requirements/optional.txt -r requirements/runtime.txt
+pip3 install -r build.txt -r requirements/optional.txt -r requirements/runtime.txt
 pip3 install -v -e .
 cd -
 # install mmdeploy
@@ -63,6 +63,6 @@ echo "###################################"
 echo "# STEP 1.6: install mmdeploy      #"
 echo "###################################"
 cd ./modules/mmdeploy
-pip3 install -r requirements/optional.txt -r requirements/runtime.txt
+pip3 install -r build.txt -r requirements/optional.txt -r requirements/runtime.txt
 pip3 install -v -e .
 cd -
